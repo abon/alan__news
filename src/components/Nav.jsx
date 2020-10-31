@@ -26,18 +26,28 @@ export default function ButtonAppBar() {
 
     return (
         <div className={classes.root}>
-            <AppBar position="static">
+            <AppBar position="static" style={{
+                background: " rgb(152,151,158)"
+                background: " linear-gradient(344deg, rgba(152,151,158,0.8183648459383753) 23%, rgba(41,81,202,0.9332107843137255) 100%)"
+            }}>
                 <Toolbar>
                     <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                         <MenuIcon />
                     </IconButton>
+                    <img
+                        src="https://alan.app/voice/images/previews/preview.jpg"
+                        className={classes.alanLogo}
+                        style={{ height: 50, borderRadius: 15, marginRight: 5 }}
+                        alt="logo"
+                    />
                     <Typography variant="h6" className={classes.title}>
-                        Alan News
+                        News
           </Typography>
+
 
                 </Toolbar>
             </AppBar>
 
-        </div>
+        </div >
     );
 }
