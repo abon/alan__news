@@ -4,6 +4,7 @@ import useStyles from "./style";
 import "./App.css";
 
 import NewsCards from "./components/NewsCards/NewsCards";
+import Nav from "./components/Nav";
 
 const alanKey =
   "fce402fd775811b75f62ca6dd958272e2e956eca572e1d8b807a3e2338fdd0dc/stage";
@@ -28,6 +29,8 @@ function App() {
   }, []);
   return (
     <div className="App">
+      <Nav />
+      <NewsCards articles={newsArticles} activeArticle={activeArticle} />
       <div className={classes.logoContainer}>
         <img
           src="https://alan.app/voice/images/previews/preview.jpg"
@@ -35,7 +38,6 @@ function App() {
           alt="logo"
         />
       </div>
-      <NewsCards articles={newsArticles} activeArticle={activeArticle} />
     </div>
   );
 }
