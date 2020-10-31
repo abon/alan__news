@@ -27,8 +27,8 @@ export default function ButtonAppBar() {
     return (
         <div className={classes.root}>
             <AppBar position="static" style={{
-                background: " rgb(152,151,158)"
-                background: " linear-gradient(344deg, rgba(152,151,158,0.8183648459383753) 23%, rgba(41,81,202,0.9332107843137255) 100%)"
+                backgroundImage: "linear-gradient(to left, #30cfd0 0%, #330867 100%)"
+
             }}>
                 <Toolbar>
                     <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
@@ -51,3 +51,4 @@ export default function ButtonAppBar() {
         </div >
     );
 }
+
